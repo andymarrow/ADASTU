@@ -1,0 +1,1298 @@
+<html>
+<head>
+  <!-- META DATA -->
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free Bootstrap Themes by HTML5XCSS3 dot com - Free Responsive Html5 Templates">
+    <meta name="author" content="http://www.html5xcss3.com">
+
+	<title>ADASTU search bar</title>
+  
+	<!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css">
+	
+	<!-- Owl Carousel Assets -->
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+    <!-- <link href="owl-carousel/owl.theme.css" rel="stylesheet"> -->
+	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+	
+	<!-- Custom Fonts -->
+    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css"  type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+	<link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+		
+
+
+
+  <style>
+    img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+    * {
+      box-sizing: border-box;
+    }
+    
+    #myInput {
+      background-image: url('/css/searchicon.png');
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+    }
+    
+    #myTable {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #8b8b8b;
+      font-size: 18px;
+      top: 50px;
+    }
+    
+    #myTable th,
+    #myTable td {
+      text-align: left;
+      padding: 10px;
+    }
+    
+    #myTable tr:not(.header) {
+      display: none;   /* <-- Hide all items (but not header) on init */
+    }
+    
+    #myTable tr {
+      border-bottom: 1px solid #ddd;
+    }
+    
+    #myTable tr.header,
+    #myTable tr:hover {
+      background-color: #f1f1f1;
+    }
+   #myInput {
+     height: 30px;
+     width: 350px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #00FFFF;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  border-radius: 50%;
+  transition: transform .2s;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  transform: scale(1.5);
+  color: white;
+}
+.responseWidth{
+  pointer-events: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+@media screen and (max-width: 350px) {
+  
+  #myInput{
+   
+    margin-right: 150px;
+    width: 190px;
+    
+  }
+  
+
+
+
+
+  
+}
+
+
+
+</style>
+   
+      
+
+
+
+
+
+
+
+
+</head>
+
+<body class="sub-page">	
+	<!-- /////////////////////////////////////////Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.php">ADASTU</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.php">Home</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="TRIAL.php">General</a>
+                    </li>
+                    <li>
+                      <a class="page-scroll" href="memory.php">Memories</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="contact.php">Contact/Map</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<!-- Navigation -->
+	
+	<!-- Background Gradients-->
+	<div  class="site-gradients">
+		<div class="site-gradients-media">
+			<figure>
+				<img src="Another%20Yosemite%20short%20movie%20project%20%E2%80%93%20Modern_files/PcLGXNjMTdiFVKTrElCl__DSC2245.jpg" alt="PcLGXNjMTdiFVKTrElCl__DSC2245" srcset="https://themedemos.webmandesign.eu/modern/wp-content/uploads/sites/8/2014/11/PcLGXNjMTdiFVKTrElCl__DSC2245.jpg 1920w, https://themedemos.webmandesign.eu/modern/wp-content/uploads/sites/8/2014/11/PcLGXNjMTdiFVKTrElCl__DSC2245-420x280.jpg 420w, https://themedemos.webmandesign.eu/modern/wp-content/uploads/sites/8/2014/11/PcLGXNjMTdiFVKTrElCl__DSC2245-744x497.jpg 744w, https://themedemos.webmandesign.eu/modern/wp-content/uploads/sites/8/2014/11/PcLGXNjMTdiFVKTrElCl__DSC2245-1200x801.jpg 1200w" sizes="(max-width: 1617px) 100vw, 1617px" height="1080" width="1617">
+			</figure>
+		</div>
+	</div>
+
+	<header class="container">
+		<div class="site-branding">
+			<h1 class="site-title">
+				<a href="index.php">
+					<span>ADASTU</span>
+				</a>
+			</h1>
+			<h2 class="site-description">Welcome to Us !</h2>
+		</div>
+		<div class="social-links">
+			<ul class="list-inline">
+				<li><a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li><a href="https://www.facebook.com/profile.php?id=61552844441837"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li><a href="https://www.instagram.com/gtb0909/"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<!-- /////////////////////////////////////////Content -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top" style="font-size: 40px;">&#8593;</button>
+	<div id="page-content" class="single-page">
+		<div class="container">
+			<div class="row">
+				<div id="main-content" class="ok">
+			
+						<div class="art-content">
+							<center><h2>Dear users</h2>
+<div class="searchBar">
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by name,semister,type .." title="Type in a name" >
+</div>
+</center>
+  <table id="myTable">
+    
+    <tr class="myTableTr" >
+      <td >Applied maths</br> 1 bagashaw<sub></br></br>books/1st year 1 semister</sub></td>
+      <td class="td1">books</td>
+      <td ><a href="booksandvid.html#Applied1bagashaw's" ><img src="images\books and test image\applied 1 bagashaw.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Applied 1 </br>course outline<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#Applied 1 course outline"><img src="images\books and test image\Applied 1 course outline.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Zena maths<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#ZENA mathematics"><img src="images\books and test image\zena mathematics.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Applied 1 calculus<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#Applied 1 calculus"><img src="images\books and test image\APPLIED 1 calculus.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Applied 1 Addis</br> ababa university<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#Applied 1 Addis ababa university"><img src="images\books and test image\APPLIED 1 Addis ababa university.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>AAU lecture</br> notes<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#AAU lecture notes"><img src="images\books and test image\1.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Applied mathematics </br>chapter 3 debre</br> berhan<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#Debre berhan lecture notes"><img src="images\books and test image\2.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Girma civics </br>and ethics<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#Girma civics and ethics"><img src="images\books and test image\3.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Introduction to </br>civics and ethics</br> module<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#Introduction to civics and ethics MODULE"><img src="images\books and test image\4.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Understanding Civics </br>and Ethics<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#Understanding"><img src="images\books and test image\5.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Short notes </br>on civics<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#short"><img src="images\books and test image\6.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>English tenses<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#English tenses"><img src="images\books and test image\7.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>The basic form</br> of English </br>verb tenses<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#The basic form of English verb tenses"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Present simple</br> vs present</br> continuous<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#Present simple vs present continuous"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>short notes </br>english<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#short notes english"><img src="images\books and test image\9.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>R-chang general</br> chemistry<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#R-chang General chemistry"><img src="images\books and test image\10.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Eneyew chemistry</br> pdf's<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#Eneyew chemistry pdf's"><img src="images\books and test image\11.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Chapter 4 </br>yilkal<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#chapter 4 yilkal"><img src="images\books and test image\12.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Serway & jewett</br> physics for_scientists<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#serway_&_jewett_physics_"><img src="images\books and test image\13.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>General physics</br> lecture Note<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#General physics lecture notes"><img src="images\books and test image\14.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>General physics </br>module<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#General physics MODULE"><img src="images\books and test image\15.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>General physics</br> best short </br>note<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#General physics best short note"><img src="images\books and test image\16.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>General physics </br>module of </br>AAU<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#General physics module of Addis ababa university"><img src="images\books and test image\17.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Think python<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#Think python"><img src="images\books and test image\18.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Python notes </br>for proffecionals<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#python notes for proffecionals"><img src="images\books and test image\19.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Introduction to </br>absolute beginners</br> python<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#Introduction to absolute beginners"><img src="images\books and test image\20.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>Hands-on </br>python<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#hands-on python"><img src="images\books and test image\21.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>python 3<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#python 3"><img src="images\books and test image\22.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+    <tr class="myTableTr">
+      <td>lecture notes </br>on python<sub></br></br>books/1st year 1 semister</sub></td>
+      <td>books</td>
+      <td><a href="booksandvid.html#lecture notes on python"><img src="images\books and test image\23.png" alt="bagashaw" class="img-responsive"/></a></td>
+    </tr>
+  <!--books for 1st year 1st semister is above-->
+  <tr class="myTableTr">
+    <td>Applied 2 </br>begashaw maltot<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Applied 2 begashaw maltot"><img src="images\books and test image\24.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied mathematics </br>lecture notes<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Applied mathematics lecture notes"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Lecture note</br> Fourier-1<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#lecture notes fourier-1"><img src="images\books and test image\25.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Math 1102 </br>chapter 4<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Math 1102 chapter 4"><img src="images\books and test image\26.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter 2 </br>power series<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Chapter 2 power series"><img src="images\books and test image\27.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Basic writing </br>skill text</br> book<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Basic writing skill textbook"><img src="images\books and test image\28.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>C++ lecture </br>notes<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#C++ lecture notes"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>C++ words<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#C++ words"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>C++ How</br> to program <sub></br></br>(8<sup>th</sup>edition)</sub><sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#C++ How to program"><img src="images\books and test image\30.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>learn C++<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Learn"><img src="images\books and test image\31.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Programming </br>fundamentals<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Programming fundamentals"><img src="images\books and test image\32.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Starting out </br>with C++<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Starting out with c++"><img src="images\books and test image\33.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>chaptered </br>C++ section<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#chaptered C++ section"><img src="images\books and test image\34.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Lecture notes </br>engineering drawing<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Lecture notes enginnering drawing"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Title block </br>of engineering </br>drawing<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Title block enginnering drawing"><img src="images\books and test image\35.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Text book </br>of engineering </br>drawing<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Text book of enginnering drawing"><img src="images\books and test image\36.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Introduction to</br> emerging</br> technolgy<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Introduction to emerging technologies"><img src="images\books and test image\37.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>welcome to </br>emerging </br>technolgy<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Welcome to emerging technologies"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Introduction to</br> emerging </br>technologies<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Introduction to emerging technologies"><img src="images\books and test image\38.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>chapter 2 </br>emerging</br> technolgy<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Chapter 2 emerging technolgy"><img src="images\books and test image\39.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>emerging</br> technolgy</br>course out line<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#emerging technolgy course outline"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>logic</br>power</br> point<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Logic power point"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>introduction</br>to</br> logic<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Introduction to logic"><img src="images\books and test image\40.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Patrick </br>J_hurley<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Patrick J-hurley"><img src="images\books and test image\41.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Answer to </br> Patrick </br> J_hurley<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Answer to Patrick J-hurley"><img src="images\books and test image\42.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Logic ሀጸጽ<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#logic ህጸጽ"><img src="images\books and test image\43.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Logic course</br> outline<sub></br></br>books/1st year 2nd semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#logic course outline"><img src="images\books and test image\44.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <!--////////////////////// the above is for 2nd year 1st semister-->
+  <tr class="myTableTr">
+    <td>Zena Math<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#ZENA Mathematics"><img src="images\books and test image\45.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied maths</br> 3<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Applied mathematics 3 bagashaw"><img src="images\books and test image\46.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>derivatives inverse </br>hyperbolic </br>functions<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Derivatives-inverse hyperbolic-functions"><img src="images\books and test image\47.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Maths Kreyszing<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Kreyszing mathematics"><img src="images\books and test image\48.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>ODE Applied </br>maths |||<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#ODE Applied mathematics 3"><img src="images\books and test image\49.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Short notes </br>Applied 3<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Short notes Applied 3"><img src="images\books and test image\50.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied electronics </br>circuit 1 </br>module<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Applid electronics 1 module"><img src="images\books and test image\51.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>BJT and </br>JFET </br>problems<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#BJT and JFET problems"><img src="images\books and test image\52.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter one </br>by AGA on</br> Applied electronics</br> circuit<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#chapter 1 by AGA"><img src="images\books and test image\53.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>lecturers wendsons </br>notes on </br>Applied electronics</br> circuit<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#instructor wendson notes"><img src="images\books and test image\54.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Robert </br>L_Boylestad<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Robert-l boylstead"><img src="images\books and test image\55.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>data structure </br>and Algorithms<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\4_5827988260932029600.pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>15-binary </br>trees<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\15-btrees.ppt"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Addational Note </br>on data </br>structure<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\Addational Note.docx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Algorithms and </br>Data structures<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\Algorithms and Data structures.pdf"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>best lecture </br>by hand writing </br>about c++-1-1<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\best lecture by hand writing about c++-1-1.pdf"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter 2 Simple</br> Searching and</br> Sorting<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\Chapter 2 Simple Searching and Sorting.pdf"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter 3 </br>Linked List<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\Chapter 3 Linked List.pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter 4 </br>STACK<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\Chapter 4 STACK.pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>chapter 5 </br>queue<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\chapter 5 queue.pdf"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter 6 </br>TREE<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\Chapter 6 TREE.pdf"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>chapter_three </br>on data </br>structure<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\chapter_three.pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>chapter_two </br>on data </br>structure<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\chapter_two.pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter07 </br>Graphs on </br>data structure<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\Chapter07-Graphs.ppt"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr><tr class="myTableTr">
+    <td>Chapter08 </br> Advanced Sorting </br> and Searching<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\Chapter08 - Advanced Sorting and Searching.pdf"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>cse(1_2) on</br> data structure<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\cse(1_2).pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Data Structure</br> and Algoritms<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\Data Structure and Algoritms.pdf"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Data Structure </br>using C<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\Data Structure using C.pdf"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>DSA Chapter 1 </br> Intro w12<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\DSA Chapter 1 - Intro w12.pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>DSA Chapter 2 </br> Search and </br>Sort w34<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\DSA Chapter 2 - Search and Sort w34.pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>DSA Chapter 3 </br> Linked List </br>  Another Version<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\DSA Chapter 3 - Linked List -  Another Version.pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>DSA Chapter 3 </br> Linked List<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\DSA Chapter 3 - Linked List.ppt"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>DSA Chapter 4 </br> Stack<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\DSA Chapter 4 - Stack.pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>DSA Chapter 5 </br> Queue<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\DSA Chapter 5 - Queue.pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>DSA Chapter 6 </br> Tree<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\DSA Chapter 6 - Tree.pptx"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>DSA_Week3<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\DSA_Week3.pdf"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>linked lists </br> algorithm data</br> structure<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\linked_lists_algorithm.pdf"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Sort And Search </br>Implementation</br> data structure <sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="data folder\2nd year 1st semister electrical\books and handnotes\DATA STRUCTURE\SortAndSearchImplementation.pdf"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Alexander Fundamentals<sub></br></br>(3<sup>rd</sup>edition)</sub> <sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Alexander fundamentals"><img src="images\books and test image\56.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Lecture notes </br>fundamentals of </br>electrical engineering<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#fundamental Lecture notes"><img src="images\books and test image\57.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter 5 </br>sinusoids<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#chapter 5 sinusoids"><img src="images\books and test image\58.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter 5-6 </br>fundamentals of </br>electrical engineering<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#chapter 5-6 fundamentals"><img src="images\books and test image\59.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter 4 </br>Note fundamentals</br> of electrical </br>engineering<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Chapter 4 note on fundamentals"><img src="images\books and test image\60.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter 8 </br>fundamentals of </br>electrical engineering<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Chapter 8 fundamentals"><img src="images\books and test image\61.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Geography of </br>ethiopia and </br>the horn<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Geography of ethiopia and the horn"><img src="images\books and test image\62.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Geography by </br>netsanet <sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Geography by netsanet"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>LART 1004 </br>Geography of the </br>horn by tesfaye<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#LART 1004 Geography of ethiopia and the horn by tesfaye"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Chapter 6 </br>Geography<sub></br></br>books/2nd year 1st semister</sub></td>
+    <td>books</td>
+    <td><a href="booksandvid.html#Chapter 6 Geography"><img src="images\books and test image\29.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>applied maths</br> test astu<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied maths test ASTU"><img src="images\books and test image\67.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>applied math </br>test<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied math test134"><img src="images\books and test image\68.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>applied maths </br>astu final</br> exam<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied maths ASTU final exam"><img src="images\books and test image\69.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>addis ababa </br>science and technology</br> university maths test<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Addis ababa science and technolgy university maths TEST"><img src="images\books and test image\70.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>applied 1 maths </br>test<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied 1 maths tests"><img src="images\books and test image\71.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>maths eestu</br> exam 2007<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#maths exam EESTU 2007"><img src="images\books and test image\72.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>maths final </br>2017</br> applied 1<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#maths final 2017"><img src="images\books and test image\73.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>math final </br>exam 1-1 </br>applied 1<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#maths final exam -1-1"><img src="images\books and test image\74.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>maths final </br>astu keleme </br>applied 1<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Maths final -astu- ቀለሜ"><img src="images\books and test image\75.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>images on </br>applied 1 </br>test<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Maths final images"><img src="images\books and test image\76.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>adama science </br>and technolgy </br>civic exam <sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Adama science and technology civic exam"><img src="images\books and test image\77.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>civic final </br>exam @keleme</br> -2013<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Civic final exam @keleme 2013"><img src="images\books and test image\78.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>civic </br>exams- keleme<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Civic exams keleme"><img src="images\books and test image\79.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>images on </br>civic test's<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Civic exams images"><img src="images\books and test image\80.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>englsih eeestu </br>2007 test<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#English EESTU 2017"><img src="images\books and test image\81.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>english final</br> astu keleme</br> pdf<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#English EESTU 2017"><img src="images\books and test image\82.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>key words </br>from the </br>units in </br>the text book,</br> english test.<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Key words from the units in the text book"><img src="images\books and test image\83.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>present progressive </br>vs simple</br> present<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Present progressive vs simple present"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>images on </br>english test's<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Images on tests of english"><img src="images\books and test image\84.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>chemistry eeestu</br> 2007 english</br> test's.<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Chemistry EESTU 2007"><img src="images\books and test image\85.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>chemistry 2014 </br>final <sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#CHEMO 2014 FINAL"><img src="images\books and test image\86.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>chemistry 2016 </br>mid<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#CHEMO 2016 MID"><img src="images\books and test image\87.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>chemistry 2017 </br>final <sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#CHEMO 2017 FINAL"><img src="images\books and test image\88.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>general chemistry </br>mid 2009<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#G. Chemistry mid 2009"><img src="images\books and test image\89.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>images on </br>chemistry </br>test's part 1<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#images of tests for chemistry part 1"><img src="images\books and test image\90.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>images on </br>chemistry </br>test's part 2<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#images of tests for chemistry part 2"><img src="images\books and test image\91.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>all physics </br>question's.<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#All physics questions"><img src="images\books and test image\92.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>physics final</br> with answers </br>2013. <sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Physics 2013 final with answers"><img src="images\books and test image\93.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>physics eeestu</br> 2007.<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Physics EESTU 2007 test"><img src="images\books and test image\94.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>physics final</br> astu keleme<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Physics final astu keleme"><img src="images\books and test image\95.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>physics final </br>astu be </br>keleme<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Physics final astu be keleme"><img src="images\books and test image\96.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>physics mid </br>astu keleme<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Physics mid astu keleme"><img src="images\books and test image\97.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>images on </br>physics test's<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Physics Test"><img src="images\books and test image\98.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>cse1101 2014<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#cse1101 2014"><img src="images\books and test image\99.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>New document </br>of test 1 </br>for python<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#New document of test 1 for python"><img src="images\books and test image\100.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>New document </br>of test 2 </br>for python<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#New document of test 2 for python"><img src="images\books and test image\101.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>New document </br>of test 3 </br>for python<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#New document of test 3 for python"><img src="images\books and test image\102.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>New document </br>of test 4 </br>for python<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#New document of test 4 for python"><img src="images\books and test image\103.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>New document </br>of test 5 </br>for python<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#New document of test 5 for python"><img src="images\books and test image\104.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Python exam<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Python exam"><img src="images\books and test image\105.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Python exam 2<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Python exam 2"><img src="images\books and test image\106.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Python exam 3 <sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Python exam3"><img src="images\books and test image\107.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Python exam 4 <sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Python exam 4"><img src="images\books and test image\108.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Python image </br>test </br>part 1 <sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Python image test part 1"><img src="images\books and test image\109.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Python image </br>test </br>part 2<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Python image test part 2"><img src="images\books and test image\110.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>ASTU zip</br> file exam<sub></br></br>test's/1st year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#ASTU zip file exam"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied </br>|| final exam<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied || final exam"><img src="images\books and test image\111.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied maths </br>|| ASTU<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied maths || ASTU"><img src="images\books and test image\112.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied maths </br>test<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied maths test"><img src="images\books and test image\113.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>ASTU Applied</br> II math </br>final(@fresh_astu)<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#ASTU Applied II math final(@fresh_astu)"><img src="images\books and test image\114.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>ASTU Applied </br> II math </br>final(@fresh_astu)</br> second<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#ASTU Applied II math final(@fresh_astu) second"><img src="images\books and test image\115.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>images on </br>applied 2 </br>test<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#images on applied 2 test"><img src="images\books and test image\116.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Basic writing </br>skill images<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Basic writing skill images"><img src="images\books and test image\117.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Astu c++ </br>final exam </br>collection<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Astu c++ final exam collection"><img src="images\books and test image\118.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>C++ notes </br>and exam<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#C++ notes and exam"><img src="images\books and test image\119.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Enginnering drawing </br>final test<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Enginnering drawing final test"><img src="images\books and test image\120.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Enginnering drawing </br>final test</br> images<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Enginnering drawing final test images"><img src="images\books and test image\121.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>emerging-final </br>and mid </br>collection of </br>tests<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#emerging-final and mid collection of tests"><img src="images\books and test image\122.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Logic and critical </br>thinking image </br>of tests<sub></br></br>test's/1st year 2nd semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Logic and critical thinking image of tests"><img src="images\books and test image\123.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied Math </br>III Final Exams </br>with solutions</br> (@fresh_astu) (2)<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied Math III Final Exams with solutions(@fresh_astu) (2)"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied Mathematics</br> III Mid-Exam<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied Mathematics III Mid-Exam"><img src="images\books and test image\124.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied Mathematics</br> III rar </br> file of exams<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied Mathematics III rar file of exams"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied Mathematics </br>III images </br>of exams </br>part 1<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied Mathematics III images of exams part 1"><img src="images\books and test image\125.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied Mathematics</br> III images </br>of exams </br>part 2<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Applied Mathematics III images of exams part 2"><img src="images\books and test image\126.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Assignment on </br>Electronics Circuit </br> I(2023) 230307 </br>225001<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#Assignment on Electronics Circuit I(2023)_230307_225001"><img src="images\books and test image\127.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>biasing circuits<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#biasing circuits12"><img src="images\books and test image\128.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>BJT and JFET</br> PROBLEMS<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#BJT and JFET PROBLEMS12"><img src="images\books and test image\129.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>test images </br>on circuit<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#test images on circuit"><img src="images\books and test image\130.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>test images </br>on data </br>structure<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#test images on data structure"><img src="images\books and test image\131.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>test images</br> on fundamentals<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#test images on fundamentals"><img src="images\books and test image\132.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>test images </br>on Geography<sub></br></br>test's/2nd year 1st semister</sub></td>
+    <td>test's</td>
+    <td><a href="booksandvid.html#test images on Geography"><img src="images\books and test image\133.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied 1 mathematics</br> solution for</br> worksheet 2<sub></br></br>assignments/1st year 1st semister</sub></td>
+    <td>assignments</td>
+    <td><a href="booksandvid.html#Applied 1 mathematics solution for worksheet 2"><img src="images\books and test image\134.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>Applied 1 mathematics</br> AAu </br>worksheet 1<sub></br></br>assignments/1st year 1st semister</sub></td>
+    <td>assignments</td>
+    <td><a href="booksandvid.html#Applied 1 mathematics AAu worksheet 1"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>final projects </br>for chemistry<sub></br></br>assignments/1st year 1st semister</sub></td>
+    <td>assignments</td>
+    <td><a href="booksandvid.html#final projects for chemistry"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>civic group </br>assigment sample<sub></br></br>assignments/1st year 1st semister</sub></td>
+    <td>assignments</td>
+    <td><a href="booksandvid.html#civic group assigment sample"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>civic individual </br>assigment sample<sub></br></br>assignments/1st year 1st semister</sub></td>
+    <td>assignments</td>
+    <td><a href="booksandvid.html#civic individual assigment sample"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  <tr class="myTableTr">
+    <td>general physics </br>assignments<sub></br></br>assignments/1st year 1st semister</sub></td>
+    <td>assignments</td>
+    <td><a href="booksandvid.html#general physics assignments"><img src="images\books and test image\8.png" alt="bagashaw" class="img-responsive"/></a></td>
+  </tr>
+  
+ 
+  
+  
+
+
+    
+  
+  
+    
+
+
+
+
+
+
+  </table>
+
+
+  
+
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "table-row"; // <-- Show matching items
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+
+    //Get the button
+		var mybutton = document.getElementById("myBtn");
+		
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+		
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+  </script>
+	
+				</div>
+			</div>
+		</div>
+		
+	</div>
+  </div>
+<!-- FOOTER -->
+	<footer>
+		<div class="wrap-footer">
+			<div class="container">
+				<div class="row"> 
+					<div class="col-footer col-md-3">
+						<h2 class="footer-title">About Us</h2>
+						<div class="textwidget">we are a group of students dedicated to help students at astu university<br/><br/>
+							and to make the university well known for its outstanding student support platform.
+
+
+						</div>
+					</div> 
+					
+					<div class="col-footer col-md-3">
+						<h2 class="footer-title">update</h2>
+						If you want to receive our latest news send directly to your email, please leave your email address bellow. Subscription is free and you can cancel anytime.
+						<form action="subscribe-form.php" method="post">
+							<input type="email" name="subscribe-form" value="" size="40" placeholder="Your Email" />
+							<button type="submit"  name="subscribe-btn" class="btn btn-skin">SUBSCRIBE</button>
+						</form>
+					</div>
+					<div class="col-footer col-md-3">
+						<h2 class="footer-title">Tags</h2>
+						<div class="footer-tags">
+							
+					
+							
+							<a href="booksandvid.html#books">books</a>
+							<a href="booksandvid.html#Fresh mans c++ final">assignment</a>
+							<a href="booksandvid.html#Fresh mans c++ final">tests</a>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<p style="color: black;">made by :- The GTB</p>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline social-buttons">
+							<li><a href="#"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li><a href="https://www.facebook.com/profile.php?id=61552844441837"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a>
+							</li>
+							<li><a href="https://www.instagram.com/gtb0909/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://t.me/+4OSrJNIvHc00ODM0"><i class="bx bxl-telegram"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline quicklinks">
+							<li><a href="contact.php">contact us</a>
+							</li>
+							<li><a href="contact.php">support us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+	<!-- Custom Theme JavaScript -->
+	<script src="js/agency.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/cbpAnimatedHeader.js"></script>
+	
+</body>
+</html>

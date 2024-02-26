@@ -163,12 +163,11 @@ html{
 		</div>
 		<div class="social-links">
 			<ul class="list-inline">
-							<li><a href="#"><i class="fa fa-twitter"></i></a>
-							</li>
+							
 							<li><a href="https://www.facebook.com/profile.php?id=61552844441837"><i class="fa fa-facebook"></i></a>
 							</li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a>
-							</li>
+							<li><a href="https://t.me/+4OSrJNIvHc00ODM0"><i class="fa bx bxl-telegram"></i></a></li>
+				
 							<li><a href="https://www.instagram.com/gtb0909/"><i class="fa fa-instagram"></i></a></li>
 			</ul>
 		</div>
@@ -409,11 +408,11 @@ html{
 					</div>
 					<div class="col-md-4">
 						<ul class="list-inline social-buttons">
-							<li><a href="#"><i class="fa fa-twitter"></i></a>
+							<li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
 							</li>
 							<li><a href="https://www.facebook.com/profile.php?id=61552844441837"><i class="fa fa-facebook"></i></a>
 							</li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a>
+							<li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
 							</li>
 							<li><a href="https://www.instagram.com/gtb0909/"><i class="fa fa-instagram"></i></a></li>
 							<li><a href="https://t.me/+4OSrJNIvHc00ODM0"><i class="bx bxl-telegram"></i></a>

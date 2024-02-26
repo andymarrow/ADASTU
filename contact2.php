@@ -116,10 +116,10 @@ if(isset($_POST['submitcontact']))
 		<div class="social-links">
 			<ul class="list-inline">
 				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
 				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 				<li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
 			</ul>
 		</div>
 	</header>
@@ -256,11 +256,11 @@ if(isset($_POST['submitcontact']))
 					</div>
 					<div class="col-md-4">
 						<ul class="list-inline social-buttons">
-							<li><a href="#"><i class="fa fa-twitter"></i></a>
+							<li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
 							</li>
 							<li><a href="#"><i class="fa fa-facebook"></i></a>
 							</li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a>
+							<li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
 							</li>
 							<li><a href="#"><i class="fa fa-pinterest"></i></a>
 							</li>
